@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- main wavesurfer.js lib -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.2.3/wavesurfer.min.js"></script>
+    <!-- wavesurfer.js regions -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.2.3/plugin/wavesurfer.regions.min.js"></script>
+    <!-- wavesurfer.js timeline -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.2.3/plugin/wavesurfer.timeline.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.4.0/plugin/wavesurfer.playlist.min.js'></script>
+
+    <div id="track-container" class="container">
+        <header class="head"> 
+            <h1>
+                PLAYLIST PLAYER
+            </h1>
+        </header>
+    <div class="center">
+        <div id="time-line"></div>
+    <div id="track"></div>
+    <div id="current-time-region"></div>
+    <div class="margin">
+    <div class="fa fa-play-circle" id="play-btn"></div>
+    <div class="fa fa-pause-circle" id="pause-btn"></div>
+    <div class="fa fa-stop-circle" id="stop-btn"></div>
+    <div class="fa fa-fast-backward" id="backward-btn"></div>
+    <div class="fa fa-fast-forward" id="forward-btn"></div>
+    <input class="file-chooser" type="file" id="fileinput" accept="audio/MP3, audio/AAC,  audio/WAV, audio/FLAC, audio/ALAC, audio/DSD"/>
+    </div>
+    </div>
+</div>
+
+    <script src="./track.js"></script>
+</body>
+</html>
